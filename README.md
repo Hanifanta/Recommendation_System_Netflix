@@ -102,7 +102,7 @@ Pada evaluasi model ini penulis menggunakan metrik precision content based filte
     
 - Hasil 10 film yang direkomendasikan oleh sistem :
 <br>
-    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/9.png'/> <p>
+    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/10.png'/> <p>
 
 Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat dilihat bahwa judul film Casino Tycoon 2 memiliki 3 genre yaitu Action & Adventure, Dramas, dan International Movies. Lalu memiliki rating film yaitu *TV-MA*, dan memiliki tipe konten adalah *Movie* . Setelah itu dari hasil rekomendasi di atas, diketahui bahwa Casino Tycoon 2 memiliki 3 genre,rating *TV-MA*,tipe konten *Movie*. dan dari 10 film yang direkomendasikan, 10 film memiliki kategori 3 genre,dan tipe konten yang sama (similar). tetapi pada 10 film yang direkomendasikan ada 1 rating film yang berbeda.
 Artinya, precision sistem kita sebesar 9/10 atau sebesar 90%.
