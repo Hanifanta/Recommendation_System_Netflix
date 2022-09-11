@@ -92,6 +92,8 @@ Data preparation yang digunakan oleh saya yaitu :
     <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/13.png' width= 500/> <p>
     
     Lalu setelah dibuatnya cosine dan munculnya rekomendasi dari algoritma tersebut. maka saya mencoba untuk meminta rekomendasi film berdasar judul yang saya mau.
+    <br>
+    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/14.png' width= 500/> <p>
     - Hasil dari modeling menggunakan Content Based Filtering :
     <br>
     <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/12.png' width= 500/> <p>
