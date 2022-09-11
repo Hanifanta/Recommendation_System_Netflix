@@ -4,7 +4,7 @@
 ---
 Sistem Rekomendasi Film, merupakan Sistem yang digunakan untuk merekomendasikan sebuah film/konten yang biasanya digunakan pada platform seperti Netflix. Sistem rekomendasi yang saya buat ini didasarkan dengan peferensi kesukaan pengguna pada tahun lalu, serta rating dari movie tersebut.
 
-Sistem Rekomendasi telah menjadi lazim dalam beberapa tahun terakhir karena mereka menangani masalah kelebihan informasi dengan menyarankan pengguna sebuah produk yang paling relevan dari sejumlah besar data. Untuk produk media, Sistem Rekomendasi film berupaya membantu pengguna mengakses film pilihan mereka dengan menangkap tetangga yang persis sama di antara pengguna atau film dari peringkat umum historis mereka. Namun, karena data yang jarang, pemilihan tetangga menjadi lebih sulit dengan meningkatnya film dan pengguna dengan cepat.
+Sistem Rekomendasi telah menjadi lazim dalam beberapa tahun terakhir karena mereka menangani masalah kelebihan informasi dengan menyarankan pengguna sebuah produk yang paling relevan dari sejumlah besar data. Untuk produk media, Sistem Rekomendasi film berupaya membantu pengguna mengakses film pilihan mereka dengan mengambil data yang persis sama di antara pengguna atau film dari peringkat umum historis mereka.
 
 ## Business Understanding
 ---
@@ -85,16 +85,22 @@ Data preparation yang digunakan oleh saya yaitu :
 
 - Proses yang saya lakukan pada data ini adalah dengan membuat Algoritma machine learning, yaitu Content based filtering.
   * Content based filtering pada beberapa metrik.
-    - Faktor yang digunakan pada filtering kali ini adalah : Title, Cast, Director, Listed in, Plot.
+    - Faktor yang digunakan pada filtering kali ini adalah : title, genres, show_id, type, rating.
+    Jadi pada pembuatan content based filtering ini saya menggunakan cosine.
+    - Hasil dari algoritma cosine :
+    <br>
+    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/13.png' width= 500/> <p>
+    
+    Lalu setelah dibuatnya cosine dan munculnya rekomendasi dari algoritma tersebut. maka saya mencoba untuk meminta rekomendasi film berdasar judul yang saya mau.
     - Hasil dari modeling menggunakan Content Based Filtering :
     <br>
-    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/5.png' width= 500/> <p>
-   dari hasil di atas dapat dilihat bahwa ketika memerlukan rekomendasi film yang mirip dengan kata kunci yang kita masukan, maka sistem akan merekomendasikan film yang mirip.
+    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/12.png' width= 500/> <p>
+   dari hasil di atas dapat dilihat bahwa ketika memerlukan rekomendasi film yang mirip dengan kata kunci yang kita masukan, maka sistem akan merekomendasikan film yang mirip dengan genres,type,rating.
 
 ## Evaluation
 ---
 - Hasil Evaluasi Content Based Filtering
-Pada evaluasi model ini penulis menggunakan metrik precision content based filtering untuk menghitung precision model sistem telah dibuat sebelumnya. Berikut ini adalah hasil analisisnya:
+Pada evaluasi model ini saya menggunakan metrik precision content based filtering untuk menghitung precision model sistem telah dibuat sebelumnya. Berikut ini adalah hasil analisisnya:
 
 - Film yang digunakan untuk metrics precision 'Casino Tycoon 2' :
 <br>
