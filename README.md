@@ -94,15 +94,20 @@ Data preparation yang digunakan oleh saya yaitu :
 ## Evaluation
 ---
 - Hasil Evaluasi Content Based Filtering
-Pada kasus ini saya mencoba memasukan kata kunci **Case** untuk mencari rekomendasi film yang mirip dengan kata kunci Case.
+Pada evaluasi model ini penulis menggunakan metrik precision content based filtering untuk menghitung precision model sistem telah dibuat sebelumnya. Berikut ini adalah hasil analisisnya:
+
+- Film yang digunakan untuk metrics precision 'Casino Tycoon 2' :
 <br>
-    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/6.png' width= 500/> <p>
-    * Terlihat pada hasil rekomendasi diatas, sistem merekomendasikan beberapa judul film yang mirip dengan kata kunci yang kita masukkan.
+    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/8.png'/> <p>
+    
+- Hasil 10 film yang direkomendasikan oleh sistem :
+<br>
+    <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/9.png'/> <p>
 
-Teknik Evaluasi di atas adalah dengan menggunakan Content based filtering on multiple metrics. 
-Lalu dibuatkan sebuah Soup/Tas untuk menampung kata yang terdiri dari (title,director,cast,listed_in,description), setelah itu diterapkanlah CountVectorizer yang berfungsi untuk menghitung frekuensi kata dalam dokumen.
+Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat dilihat bahwa judul film Casino Tycoon 2 memiliki 3 genre yaitu Action & Adventure, Dramas, dan International Movies. Lalu memiliki rating film yaitu *TV-MA*, dan memiliki tipe konten adalah *Movie* . Setelah itu dari hasil rekomendasi di atas, diketahui bahwa Casino Tycoon 2 memiliki 3 genre,rating *TV-MA*,tipe konten *Movie*. dan dari 10 film yang direkomendasikan, 10 film memiliki kategori 3 genre,dan tipe konten yang sama (similar). tetapi pada 10 film yang direkomendasikan ada 1 rating film yang berbeda.
+Artinya, precision sistem kita sebesar 9/10 atau sebesar 90%.
 
-yang menerapkan rumus yaitu seperti berikut : 
+Metrics Precision Formula :
 <br>
     <image src='https://raw.githubusercontent.com/Hanifanta/Recommendation_System_Netflix/main/images/7.png'/> <p>
     
